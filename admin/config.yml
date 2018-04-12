@@ -19,13 +19,12 @@ collections:
         name: "tags"
         widget: "list"
         allow_add: true
-        default: ["Story"]
+        default: ["story"]
       - {label: "excerpt", name: "excerpt", widget: "string", required: false}
       - {label: "comments", name: "comments", widget: "hidden", default: true}
-      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
       - label: "date"
         name: "date"
         widget: "date"
         default: ""
         format: "MMM Do YY"
-      - {label: "Body", name: "body", widget: "markdown", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
