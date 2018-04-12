@@ -1,5 +1,5 @@
 backend:
-  name: CCSource.org
+  name: git-gateway
   branch: site
 
 publish_mode: editorial_workflow
