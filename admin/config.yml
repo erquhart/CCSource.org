@@ -1,5 +1,5 @@
 backend:
-  name: ccsource-org
+  name: CCSource.org
   branch: site
 
 publish_mode: editorial_workflow
