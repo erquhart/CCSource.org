@@ -11,11 +11,21 @@ collections:
     label: "Story"
     folder: "_posts"
     create: true
-    slug: ".md"
+    slug: "---"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Keywords", name: "keywords", widget: "string", required: false}
-      - {label: "Description", name: "description", widget: "string", required: false}
+      - label: "tags"
+        name: "tags"
+        widget: "list"
+        allow_add: true
+        default: ["Story"]
+      - {label: "excerpt", name: "excerpt", widget: "string", required: false}
+      - {label: "comments", name: "comments", widget: "hidden", default: true}
       - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - label: "date"
+        name: "date"
+        widget: "date"
+        default: ""
+        format: "MMM Do YY"
       - {label: "Body", name: "body", widget: "markdown", required: false}
