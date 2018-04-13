@@ -35,23 +35,3 @@ collections:
         default: ""
         format: "MMM Do YY"
       - {label: "Body", name: "body", widget: "markdown", required: true}
-    files:
-      - label: "Markdown Syntax"
-        name: "Markdown Syntax"
-        file: "_posts/2016-03-20-markdown-syntax.md"
-        fields:
-          - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-          - {label: "Title", name: "title", widget: "string"}
-          - label: "tags"
-            name: "tags"
-            widget: "list"
-            allow_add: true
-            default: ["story"]
-          - {label: "excerpt", name: "excerpt", widget: "string", required: false}
-          - {label: "comments", name: "comments", widget: "hidden", default: true}
-          - label: "date"
-            name: "date"
-            widget: "date"
-            default: ""
-            format: "MMM Do YY"
-          - {label: "Body", name: "body", widget: "markdown", required: true}
