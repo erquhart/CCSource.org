@@ -7,9 +7,9 @@ publish_mode: editorial_workflow
 media_folder: "files"
 
 collections:
-  - name: "story"
-    label: "Story"
-    folder: "_posts"
+  - name: "post"
+    label: "Post"
+    folder: "posts"
     create: true
     slug: ".md"
     fields:
