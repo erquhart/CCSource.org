@@ -16,7 +16,6 @@ collections:
   - name: "story"
     label: "Story"
     folder: "_posts"
-    extension: "md"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
