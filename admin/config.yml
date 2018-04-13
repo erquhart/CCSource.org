@@ -1,15 +1,23 @@
 backend:
   name: git-gateway
-  branch: source
+  branch: site
 
 publish_mode: editorial_workflow
 
 media_folder: "files"
 
+display_url: https://ccsource.org
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
 collections:
   - name: "story"
     label: "Story"
     folder: "_posts"
+    extension: "md"
+    slug: "{{year}}-{{month}}-{{slug}}"
     create: true
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
