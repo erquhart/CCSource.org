@@ -27,11 +27,11 @@ collections:
         widget: "list"
         allow_add: true
         default: ["story"]
-      - {label: "excerpt", name: "excerpt", widget: "string", required: false}
+      - {label: "Summary", name: "excerpt", widget: "string", required: false}
       - {label: "comments", name: "comments", widget: "hidden", default: true}
-      - label: "date"
+      - label: "Publish date"
         name: "date"
-        widget: "date"
+        widget: "datetime"
         default: ""
         format: "MMM Do YY"
       - {label: "Body", name: "body", widget: "markdown", required: true}
